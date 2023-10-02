@@ -58,6 +58,8 @@ nav {
 }
 
 /* MAIN */
+
+/* Sction Overview */
 .overview {
     width: 100%;
     padding: 3rem 2rem;
@@ -87,6 +89,11 @@ nav {
     color: var(--grey);
 }
 
+.row a {
+    text-decoration: none;
+}
+
+/* Row Demo */
 .app-store {
     background-color: var(--blue);
     margin-top: 2rem;
@@ -101,4 +108,19 @@ nav {
 .app-img {
     padding-top: 2rem;
     line-height: 0;
+}
+
+/* Row Shorter */
+.shorter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.shorter i {
+    color: var(--blue);
+    font-size: 5rem;
+    margin-bottom: 2rem;
 }
