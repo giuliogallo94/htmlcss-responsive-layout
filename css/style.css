@@ -252,8 +252,55 @@ p {
     font-weight: 800;
 }
 
-.more {
+.violet-btn {
     background-color: var(--violet);
     width: 60%;
     margin-top: 1rem;
+}
+
+/* Section About Us */
+
+.about-us h2 {
+    color: var(--violet);
+    font-size: 3rem;
+}
+
+.about-us p {
+    margin-top: 1rem;
+}
+
+.profile-img {
+    width: 60%;
+    display: flex;
+    position: relative;
+}
+.profile-img img {
+    margin-top: 2rem;
+    border-radius: 50%;
+    /* position: absolute; */
+}
+
+.profile-img i {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    color: var(--violet);
+    font-size: 4rem;
+}
+
+.about-us h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.linkedin a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.linkedin i {
+    margin-right: 0.5rem;
 }
