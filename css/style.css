@@ -9,8 +9,96 @@ img {
     max-width: 100%;
 }
 
-/* SETUP */
+/* COMMON */
+:root {
+    --blue: #0084fd;
+    --white: white;
+    --lightblue: #b5ddff;
+    --grey: #63798c;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
+    background-color: black;
+}
+
+.btn {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BODY */
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-color: var(--blue);
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.menu i {
+    color: var(--white);
+}
+
+/* MAIN */
+.overview {
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    background-color: var(--lightblue);
+    padding: 2.5rem 2rem 0;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.row h2 {
+    color: var(--blue);
+    margin-bottom: 2rem;
+    font-weight: 800px;
+}
+
+.row p {
+    font-weight: 800;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.app-store {
+    background-color: var(--blue);
+    margin-top: 2rem;
+    margin-right: 2rem
+}
+
+.app-store span {
+    margin-left: 1rem;
+    font-weight: 800;
+}
+
+.app-img {
+    padding-top: 2rem;
+    line-height: 0;
 }
