@@ -65,19 +65,22 @@ section {
 p {
     line-height: 1.8rem;
 }
-/* MAIN */
 
-/* Sction Overview */
- .col {
+.col {
     display: flex;
     flex-wrap: wrap;
 }
 
 .row {
-    background-color: var(--lightblue);
     padding: 2.5rem 2rem 0;
-    border-radius: 1rem;
     margin-bottom: 1rem;
+}
+/* MAIN */
+
+/* Sction Overview */
+.larger {
+    background-color: var(--lightblue);
+    border-radius: 1rem;
 }
 
 .row h2 {
@@ -114,6 +117,8 @@ p {
 
 /* Row Shorter */
 .shorter {
+    background-color: var(--lightblue);
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,4 +172,54 @@ p {
     border-radius: 50%;
     padding: 1rem;
     color: black;
+}
+
+/* Section Testimonials */
+.testimonials {
+    text-align: center;
+}
+.testimonials h3 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--violet);
+}
+
+.testimonials p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials-row {
+    background-color: var(--violet);
+    border-radius: 3rem;
+    padding-bottom: 1rem;
+}
+
+.testimonials-row img {
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-row p, span {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.testimonials-row p {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.virgolette {
+    font-size: 2.5rem;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 800;
 }
