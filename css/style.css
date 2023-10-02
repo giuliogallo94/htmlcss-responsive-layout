@@ -133,12 +133,12 @@ p {
 }
 
 /* Section Planning */
-.planning {
+.violet-sec {
     background-color: var(--violet);
     color: var(--white);
 }
 
-.planning h2 {
+.violet-sec h2 {
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -222,4 +222,38 @@ p {
 .name {
     font-size: 1.2rem;
     font-weight: 800;
+}
+
+/* Section Benefits */
+.benefits {
+    border-radius: 2rem;
+    background-color: white;
+    padding: 0rem 2rem;
+    padding-bottom: 1rem;
+}
+
+.benefits h2,h3 {
+    color: var(--violet);
+}
+
+.benefits h2 {
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.benefits h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.benefits a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.more {
+    background-color: var(--violet);
+    width: 60%;
+    margin-top: 1rem;
 }
