@@ -15,6 +15,7 @@ img {
     --white: white;
     --lightblue: #b5ddff;
     --grey: #63798c;
+    --violet: #9792e4;
 }
 
 body {
@@ -57,15 +58,17 @@ nav {
     color: var(--white);
 }
 
-/* MAIN */
-
-/* Sction Overview */
-.overview {
-    width: 100%;
+section {
     padding: 3rem 2rem;
 }
 
-.col {
+p {
+    line-height: 1.8rem;
+}
+/* MAIN */
+
+/* Sction Overview */
+ .col {
     display: flex;
     flex-wrap: wrap;
 }
@@ -85,7 +88,6 @@ nav {
 
 .row p {
     font-weight: 800;
-    line-height: 1.8rem;
     color: var(--grey);
 }
 
@@ -123,4 +125,46 @@ nav {
     color: var(--blue);
     font-size: 5rem;
     margin-bottom: 2rem;
+}
+
+/* Section Planning */
+.planning {
+    background-color: var(--violet);
+    color: var(--white);
+}
+
+.planning h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.app-developement {
+    background-color: var(--white);
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.app-developement h2,p {
+    color: black;
+}
+
+.app-developement h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.app-developement p {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.arrow-down {
+    background-color: var(--violet);
+    border-radius: 50%;
+    padding: 1rem;
+    color: black;
 }
