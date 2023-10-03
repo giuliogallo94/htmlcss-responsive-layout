@@ -21,7 +21,7 @@ img {
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
-    background-color: black;
+    background-color: var(--white);
 }
 
 .btn {
@@ -75,6 +75,12 @@ p {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .container {
+        min-width: 100vw;
+    }
+}
+
 /* HEADER */
 header {
     background-color: var(--blue);
@@ -99,17 +105,6 @@ nav {
     background-color: var(--lightblue);
     border-radius: 1rem;
 }
-/* Responsive */
-@media screen and (min-width: 768px) {
-    .larger {
-        width: calc(100% / 3 * 2 - 0.8rem)
-   }
-
-   .col {
-    display: flex;
-    gap: 2rem;
-   }
-}
 
 .row h2 {
     color: var(--blue);
@@ -124,6 +119,35 @@ nav {
 
 .row a {
     text-decoration: none;
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .larger {
+        width: calc(100% / 3 * 2 - 0.8rem)
+   }
+
+   .overview .col {
+    display: flex;
+    gap: 2rem;
+   }
+}
+
+@media screen and (min-width: 992px) {
+    .overview {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .larger {
+        width: calc(100% / 3 * 2 - 0.8rem);
+        display: flex;
+        align-items: flex-end;
+   }
+
+   .col {
+    display: flex;
+    gap: 2rem;
+   }
 }
 
 /* Row Demo */
@@ -146,6 +170,7 @@ nav {
 }
 
 /* Responsive */
+
 @media screen and (min-width: 768px) {
     .app-store {
         width: 55%;
@@ -155,7 +180,19 @@ nav {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .app-store {
+        width: 55%;
+    }
+    
+    .explanation {
+        padding-bottom: 5rem;
+    }
 
+    .app-img img {
+        max-width: 100%;
+    }
+}
 /* Row Shorter */
 .shorter {
     background-color: var(--lightblue);
@@ -191,6 +228,10 @@ nav {
     font-size: 2rem;
 }
 
+.planning p {
+    color: var(--white)
+}
+
 .app-developement {
     background-color: var(--white);
     margin-top: 2rem;
@@ -212,6 +253,7 @@ nav {
     font-style: italic;
     font-weight: 500;
     margin-bottom: 2rem;
+    color: black;
 }
 
 .arrow-down {
@@ -220,7 +262,26 @@ nav {
     padding: 1rem;
     color: black;
 }
+@media screen and (min-width: 992px){
+    .planning {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        gap: 2rem;
+        padding-top: 6rem;
+    }
+    .strategic-planning {
+        width: 60%;
+    }
 
+    .app-developement {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+}
 /* Section Testimonials */
 .testimonials {
     text-align: center;
@@ -282,30 +343,37 @@ nav {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .testimonials {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 /* Section Benefits */
-.benefits {
+.single-benefit {
     border-radius: 2rem;
     background-color: white;
     padding: 0rem 2rem;
     padding-bottom: 1rem;
 }
 
-.benefits h2,h3 {
+.single-benefit h2,h3 {
     color: var(--violet);
 }
 
-.benefits h2 {
+.single-benefit h2 {
     font-size: 3rem;
     padding-top: 2rem;
 }
 
-.benefits h3 {
+.single-benefit h3 {
     font-size: 1.5rem;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
 }
 
-.benefits a {
+.single-benefit a {
     text-decoration: none;
     font-weight: 800;
 }
@@ -316,10 +384,37 @@ nav {
         flex-wrap: wrap;
         gap: 2rem;
     }
-    .benefits {
+    .single-benefit {
         width: calc(50% - 1rem);
     }
 }
+
+@media screen and (min-width: 992px) {
+    .all-benefits {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .benefits {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .single-benefit {
+        width: calc(100% / 3 - 1.5rem);
+    }
+
+    .single-benefit h2 {
+        padding-top: 0;
+    }
+}
+
 /* Section About Us */
 
 .about-us h2 {
@@ -400,6 +495,13 @@ nav {
         width: 70%;
     }
 }
+
+@media screen and (min-width: 992px) {
+    .about-us {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
 /* Section Get Started */
 .get-started {
     text-align: center;
@@ -448,6 +550,13 @@ nav {
         padding: 2rem 0;
     }
 }
+
+@media screen and (min-width: 992px) {
+    .get-started {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 /* Footer */
 footer {
     background-color: #333333;
@@ -472,3 +581,10 @@ footer p {
     color: var(--violet);
     text-decoration: underline;
 } 
+/* Responsive */
+@media screen and (min-width: 992px) {
+    .foot {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
