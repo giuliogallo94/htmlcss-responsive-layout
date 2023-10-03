@@ -302,14 +302,24 @@ nav {
 .benefits h3 {
     font-size: 1.5rem;
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .benefits a {
     text-decoration: none;
     font-weight: 800;
 }
-
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .all-benefits {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .benefits {
+        width: calc(50% - 1rem);
+    }
+}
 /* Section About Us */
 
 .about-us h2 {
@@ -345,17 +355,51 @@ nav {
     margin-top: 1rem;
 }
 
-.linkedin a {
-    text-decoration: none;
+.linkedin {
     display: flex;
     align-items: center;
+}
+.linkedin a {
+    text-decoration: none;
     font-size: 0.8rem;
 }
 
 .linkedin i {
     margin-right: 0.5rem;
 }
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .about-us {
+        display: flex;
+        gap: 4rem;
+    }
 
+    .profile-img img {
+        max-width: 150%;
+        margin-top: 0;
+        border-radius: 50%;
+    }
+
+    .profile-img i {
+        position: absolute;
+        left: 110%;
+        top: 0;
+        color: var(--violet);
+        font-size: 4rem;
+    }
+
+    .about-us-p {
+        width: 60%;
+    }
+
+    .about-us-img {
+        width: 40%;
+    }
+
+    .linkedin a {
+        width: 70%;
+    }
+}
 /* Section Get Started */
 .get-started {
     text-align: center;
@@ -397,7 +441,13 @@ nav {
     font-weight: 200;
     text-decoration: underline;
 }
-
+/* Responsive */
+@media screen and (min-width: 768px) {
+    a.white-btn {
+        width: 35%;
+        padding: 2rem 0;
+    }
+}
 /* Footer */
 footer {
     background-color: #333333;
