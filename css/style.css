@@ -93,11 +93,54 @@ nav {
     align-items: center;
     padding: 1rem 2rem;
 }
-
+@media screen and (min-width: 992px) {
+    nav {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 .menu i {
     color: var(--white);
 }
 
+/* Pages */
+.pages {
+    display: none;
+}
+
+.pages ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.pages li {
+    margin-right: 0.5rem;
+}
+
+.pages li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#nav-start {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 3rem;
+}
+
+#nav-start a {
+    color: black;
+}
+@media screen and (min-width: 992px) {
+    .pages {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
 /* MAIN */
 
 /* Section Overview */
