@@ -44,31 +44,6 @@ body {
     color: var(--violet);
 }
 
-/* BODY */
-.container {
-    max-width: 480px;
-    margin: 0 auto;
-    background-color: var(--white);
-}
-
-/* HEADER */
-header {
-    width: 100%;
-    background-color: var(--blue);
-}
-
-/* Nav */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-.menu i {
-    color: var(--white);
-}
-
 section {
     padding: 3rem 2rem;
 }
@@ -86,12 +61,54 @@ p {
     padding: 2.5rem 2rem 0;
     margin-bottom: 1rem;
 }
+
+/* BODY */
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* HEADER */
+header {
+    background-color: var(--blue);
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.menu i {
+    color: var(--white);
+}
+
 /* MAIN */
 
-/* Sction Overview */
+/* Section Overview */
 .larger {
     background-color: var(--lightblue);
     border-radius: 1rem;
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .larger {
+        width: calc(100% / 3 * 2 - 0.8rem)
+   }
+
+   .col {
+    display: flex;
+    gap: 2rem;
+   }
 }
 
 .row h2 {
@@ -119,15 +136,25 @@ p {
     align-items: center;
 }
 
-.app-store span {
-    margin-left: 1rem;
-    font-weight: 800;
-}
-
 .app-img {
     padding-top: 2rem;
     line-height: 0;
 }
+
+.app-store span {
+    margin-left: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .app-store {
+        width: 55%;
+    }
+    .app-img img {
+        max-width: 60%;
+    }
+}
+
 
 /* Row Shorter */
 .shorter {
@@ -138,6 +165,12 @@ p {
     align-items: center;
     text-align: center;
     padding-bottom: 2rem;
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .shorter {
+        width: calc(100% / 3 - 1.4rem)
+    }
 }
 
 .shorter i {
@@ -236,6 +269,17 @@ p {
 .name {
     font-size: 1.2rem;
     font-weight: 800;
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .testimonials-row {
+        display: flex;
+        gap: 1rem
+    }
+
+    .testimonial-quote {
+        text-align: left;
+    }
 }
 
 /* Section Benefits */
