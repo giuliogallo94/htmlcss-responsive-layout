@@ -27,10 +27,21 @@ body {
 .btn {
     padding: 0.8rem 1rem;
     border-radius: 3rem;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+}
+
+.violet-btn {
+    background-color: var(--violet);
+    color: var(--white);
+    width: 60%;
+}
+
+.white-btn {
+    background-color: var(--white);
+    color: var(--violet);
 }
 
 /* BODY */
@@ -102,7 +113,10 @@ p {
 .app-store {
     background-color: var(--blue);
     margin-top: 2rem;
-    margin-right: 2rem
+    margin-right: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .app-store span {
@@ -252,12 +266,6 @@ p {
     font-weight: 800;
 }
 
-.violet-btn {
-    background-color: var(--violet);
-    width: 60%;
-    margin-top: 1rem;
-}
-
 /* Section About Us */
 
 .about-us h2 {
@@ -277,7 +285,6 @@ p {
 .profile-img img {
     margin-top: 2rem;
     border-radius: 50%;
-    /* position: absolute; */
 }
 
 .profile-img i {
@@ -304,3 +311,70 @@ p {
 .linkedin i {
     margin-right: 0.5rem;
 }
+
+/* Section Get Started */
+.get-started {
+    text-align: center;
+}
+
+.get-started a {
+    text-decoration: none;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.get-started h3 {
+    color: white;
+    font-weight: 200;
+}
+
+.get-started p {
+    color: var(--white);
+}
+
+.get-started .free {
+    color: #fdc15f;
+    font-size: 4rem;
+}
+
+.no-style {
+    list-style: none;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.copyright a {
+    color: var(--white);
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: var(--white);
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
+
+.foot-bottom {
+    margin-top: 4rem;
+}
+
+.foot-bottom p {
+    font-size: 0.8rem ;
+}
+.foot-bottom a {
+    color: var(--violet);
+    text-decoration: underline;
+} 
